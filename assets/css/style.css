@@ -13,10 +13,10 @@ Default: 1
 --- 02 COLORS
 -Primary: #e67e22
 
--Tints:
+-Tints: #fdf2e9
 -Shades:
 -Accents:
--Greys: #555
+-Greys: #555, #333
 
 --- 05 SHADOWS
 --- 06 BORDER-RADIOUS
@@ -34,7 +34,10 @@ Default: 1
 }
 
 html {
-  font-size: 10px;
+  /* font-size: 10px; */
+  /* 10px / 16px (default font size) = 0.625 converted to percentage = 62.5% */
+  /* Perrcentage of user's browser font-size setting */
+  font-size: 62.5%;
 }
 
 body {
@@ -42,4 +45,46 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+}
+
+.hero-img {
+  width: 100%;
 }

@@ -33,7 +33,7 @@ Paragraph Default: 1.6
 --- 05 SHADOWS
 --- 06 BORDER-RADIOUS
 Default: 9px
-
+Medium: 11px
 --- 07 WHITSPACE
 
 - Spacing System (px)
@@ -162,4 +162,8 @@ body {
   font-weight: 600;
   /* Put transition on original "state" */
   transition: background-color 0.3s;
+}
+
+strong {
+  font-weight: 500;
 }

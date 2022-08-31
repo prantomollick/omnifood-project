@@ -216,3 +216,9 @@ body {
 strong {
   font-weight: 500;
 }
+
+.text-strike {
+  text-decoration: line-through;
+  text-decoration-color: #333;
+  text-decoration-thickness: 0.2rem;
+}

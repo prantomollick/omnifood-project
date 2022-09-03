@@ -3,7 +3,9 @@
 https://prantomollick.github.io/omnifood-project/
 [view](https://prantomollick.github.io/omnifood-project/)
 
-# Omnifood
+# [Omnifood](https://prantomollick.github.io/omnifood-project/)
+
+[<img src="./screencapture-127-0-0-1-5500-index-html-2022-09-03-13_05_01.png">](https://prantomollick.github.io/omnifood-project/)
 
 ## About Omnifood
 

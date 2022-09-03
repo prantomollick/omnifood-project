@@ -5,7 +5,7 @@ https://prantomollick.github.io/omnifood-project/
 
 # [Omnifood](https://prantomollick.github.io/omnifood-project/)
 
-[<img src="./screenshot.png">](https://prantomollick.github.io/omnifood-project/)
+[<img src="./screenshot-omnifood.png">](https://prantomollick.github.io/omnifood-project/)
 
 ## About Omnifood
 

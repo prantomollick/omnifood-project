@@ -61,6 +61,8 @@ html {
   /* Perrcentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* DOES NOT WORK ON SAFARI */
+  /* scroll-behavior: smooth; */
 }
 
 body {

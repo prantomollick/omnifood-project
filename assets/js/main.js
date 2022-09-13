@@ -1,5 +1,4 @@
 // fixing flexbox gap property missing in some Safari versions
-
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
@@ -16,14 +15,41 @@ function checkFlexGap() {
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
-
 checkFlexGap();
 
+// make mobile navigation work
 const hamburgerMenuBtn = document.querySelector(".btn-mobile-nav");
-
+const header = document.querySelector(".header");
 const hamburgerMenuHandler = () => {
-  const header = document.querySelector(".header");
   header.classList.toggle("nav-open");
 };
 
 hamburgerMenuBtn.addEventListener("click", hamburgerMenuHandler);
+
+//Smooth scrolling animation
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    //navigate to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    //close mobile navigation
+    if (link.classList.contains("main-nav-link")) {
+      header.classList.toggle("nav-open");
+    }
+  });
+});
